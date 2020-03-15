@@ -37,7 +37,7 @@ for combination in combinations(range(5, 10)):
         for i in range(0, len(combination)):
             if steps[i] < 0:
                 continue
-            steps[i] = intcode.run_step(datas[i], steps[i], throughputs[i], throughputs[(i + 1) % len(combination)])
+            steps[i], _rel = intcode.run_step(datas[i], steps[i], throughputs[i], throughputs[(i + 1) % len(combination)])
             if steps[i] < 0:
                 done += 1
     if throughputs[0][0] > highest:
