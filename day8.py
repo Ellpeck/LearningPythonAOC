@@ -32,7 +32,8 @@ def load_image(data):
     return image
 
 
-data = open("input/8").read()
+with open("input/8") as f:
+    data = f.read()
 image = load_image(data)
 
 # part 1

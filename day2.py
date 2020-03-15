@@ -1,6 +1,7 @@
 import intcode
 
-input = open("input/2").read().split(",")
+with open("input/2") as f:
+    input = f.read().split(",")
 data = list(map(lambda i: int(i), input))
 
 # part 1

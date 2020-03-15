@@ -10,7 +10,8 @@ def combinations(remaining: list, progress: list = []):
     return total
 
 
-raw_data = open("input/7").read().split(",")
+with open("input/7") as f:
+    raw_data = f.read().split(",")
 data = list(map(lambda x: int(x), raw_data))
 
 # part 1

@@ -9,7 +9,8 @@ def total_fuel(i, prev_total):
     return prev_total
 
 
-input = open("input/1").readlines()
+with open("input/1") as f:
+    input = f.readlines()
 
 # part 1
 total = 0

@@ -16,7 +16,8 @@ class Planet:
 
 
 def collect_data() -> dict:
-    data = open("input/6").readlines()
+    with open("input/6") as f:
+        data = f.readlines()
     planets = dict()
     for line in data:
         split = line.replace("\n", "").split(")")

@@ -16,7 +16,8 @@ def fits(num, max_group_size):
     return inc
 
 
-input = open("input/4").read().split("-")
+with open("input/4") as f:
+    input = f.read().split("-")
 lowest = int(input[0])
 highest = int(input[1])
 
